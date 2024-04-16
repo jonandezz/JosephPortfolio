@@ -1,0 +1,218 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Personal Portfolio Website</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/cf24aa4dd3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div id="header ">
+		<div class="container">
+			<nav>
+				<h1 class="logo">Joseph.</h1>
+				<ul id="sidemenu">
+					<li class="bullet"><a href="#header">Home</a></li>
+					<li class="bullet"><a href="#about">About</a></li>
+					<li class="bullet"><a href="#services">Services</a></li>
+					<li class="bullet"><a href="#porfolio">Portfolio</a></li>
+					<li class="bullet"><a href="#contact">Contact</a></li>
+					<i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+				</ul>
+				<i class="fa-solid fa-bars" onclick="openmenu()"></i>
+			</nav>
+			<div class="header-text">
+				<p class="python" >Python Developer!</p>
+				<h1>Hi, I am <span>Joseph.</span><br> Welcome..</hs1>	
+			</div>
+		</div>
+	</div>
+
+<!--------------about---------->
+<div  id="about">
+	<div class="container">
+		<div  class="row">
+			<div class="about-col-1">	
+				<img src="Images/boy.jpg">
+			</div>
+			<div class="about-col-2">
+				<h1 class="sub-title">About Me</h1>
+				<p>	I am a versatile Python developer with a strong proficiency in web development frameworks, particularly Django. With a deep understanding of JavaScript and various frontend technologies, I excel in creating dynamic and interactive web applications. My expertise extends to crafting robust backend systems and seamlessly integrating them with intuitive user interfaces. Passionate about problem-solving and innovation, I thrive in collaborative environments where I can leverage my skills to deliver impactful solutions that meet and exceed client expectations.
+				</p>
+				<div class="tab-titles">
+					<p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+					<p class="tab-links" onclick="opentab('experience')">Experience</p>
+				</div>	
+				<div class="tab-contents active-tab" id="skills">
+					<ul>
+						<li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+						<li><span>Front-End Developer</span><br>Crafting user-friendly digital experiences</li>
+						<li><span>Back-End Developer </span><br>Building robust server-side functionality</li>
+					</ul>
+				</div>
+
+				<div class="tab-contents" id="experience">
+					<ul>
+						<li><span>2021-2023</span><br>Ministry of Science and Technology </li>
+						<li><span>2019-2020</span><br>Sunhive LTD</li>
+						
+					</ul>
+				</div>
+			</div>	
+		</div>
+	</div>
+</div>
+<div id="services">
+	<div class="container">
+		<h1 class="	sub-title">My Services</h1>
+		<div class="services-list" >
+			<div>
+				<i class="fa-solid fa-code"></i>
+				<h2>Front-End Development</h2>
+				<p>
+				My frontend services focus on creating visually appealing and user-friendly websites that deliver exceptional user experiences. With custom UI/UX design, responsive development, and interactive elements, I ensure that websites engage and delight users across all devices. By optimizing performance, ensuring cross-browser compatibility, and prioritizing accessibility, I create websites that reach a broad audience while maintaining high standards of code quality for scalability and ease of maintenance. </p>
+
+
+			</div>
+			<div>
+				<i class="fa-solid fa-code"></i>
+				<h2>Back-End Development</h2>
+				<p>	I excel in backend development, providing tailored solutions that meet the diverse requirements of every project. Leveraging my proficiency in frameworks like Django and Node.js, I architect robust backend systems characterized by scalability, efficiency, and maintainability. My expertise extends to designing and implementing RESTful APIs that facilitate seamless communication between frontend interfaces and backend servers.
+				</p>
+				
+
+			</div>
+			<div>
+				<i class="fa-solid fa-crop"></i>
+				<h2>UI/UX</h2>
+				<p>	
+				I specialize in providing end-to-end UI/UX design solutions aimed at elevating digital  experiences across platforms and devices. My approach begins with thorough user research and analysis to gain valuable insights into audience preferences, behaviors, and pain points. Utilizing industry-leading tools and methodologies, I then create wireframes and prototypes that serve as blueprints for intuitive and seamless user interfaces.
+				</p>
+				
+
+
+			</div>
+			
+
+			
+		</div>
+
+	</div>
+
+</div>
+
+<div id="porfolio">
+	<div class="container">
+		<h1 class="sub-title">My Work</h1>
+		<div class="work-list">
+			<div class="work">
+				<img src="Images/e.png" >
+				<div class="layout">
+					<h3>Blog Site</h3>
+					<p>This blog site has a signup page, login page, create post page, commment page logout page profile page and a forgot password page.</p>
+					<a href="https://jonandez.pythonanywhere.com"><i class="fa-solid fa-arrow-up-right-from-square"></i>	
+					</a>	
+				</div>
+
+			</div>
+			<div class="work">
+				<img src="Images/1.png" >
+				<div class="layout">
+					<h3>Ecommerce Site</h3>
+					<p>This Ecommerce site has an add to cart funtionality, a checkout functionality, add and remove item functionality and a paypal integration.</p>
+					<a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+					</a>	
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+<!-------------contact-------->
+<div id="contact">
+	<div class="container">
+		<div class="row">
+			<div class="contact-left">
+				<h1 class="sub-title">Contact Me</h1>
+				<p><i class="fa-solid fa-paper-plane"></i>Josephmudi19@gmail.com</p>
+				<p><i class="fa-solid fa-phone"></i> 09027796613</p>
+				<div class="social-icons">
+					<a href="https://twitter.com/Josephmudi19"><i class="fa-brands fa-x-twitter"> 
+					Twitter </i></a>
+				</div>
+				<a  href="Images/Resume.pdf" download class="btn btn2">Download CV</a>
+			</div>
+			<div class="contact-right">
+				<form name="submit-to-google-sheet">
+					<input type="text" name="Name" placeholder="Your Name" required>
+					<input type="email" name="email" placeholder="Your Email" required>
+					<textarea name="Message" placeholder="Your Message" rows="6"></textarea>
+					<button class="btn btn2" type="submit">Submit</button>
+				</form>
+				<span id="msg"></span>
+			</div>
+		</div>
+	</div>
+	<div class="copyright">
+		<p>Joseph Mudi &#169; <i class="fa-solid fa-bolt"></i> </p>
+	</div>
+
+</div>
+
+
+
+
+
+
+<script type="text/javascript">
+
+	var tablinks = document.getElementsByClassName("tab-links");
+	var tabcontents = document.getElementsByClassName("tab-contents");
+
+	function opentab(tabname){
+		for (tablink of tablinks){
+			tablink.classList.remove("active-link");
+		}
+		for (tabcontent of tabcontents){
+			tabcontent.classList.remove("active-tab")
+		}
+		event.currentTarget.classList.add("active-link");
+		document.getElementById(tabname).classList.add("active-tab")
+	}
+		
+</script>
+
+<script>
+	var sidemenu = document.getElementById("sidemenu");
+
+	function openmenu(){
+		sidemenu.style.right = "0";
+	}
+
+	function closemenu(){
+		sidemenu.style.right = "-150";
+	}
+
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbztJqfZGWA8gFTCd4JzWXIy92-O6s9PLezdFXWzYxJPw2o7KgLPuTbWuqf-y3zm4d6m/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+      	msg.innerHTML = "Message sent succesfully!"
+      	setTimeout(function(){
+      		msg.innerHTML = ""
+      	},5000)
+      	form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+	
+</body>
+</html>
